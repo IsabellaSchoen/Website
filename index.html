@@ -11,8 +11,8 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="https://github.com/IsabellaSchoen" target="_blank">GitHub</a></li>
-            <li><a href="#about">Projekte</a></li>
             <li><a href="#person">Person</a></li>
+            <li><a href="#about">Projekte</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
             <li style="float:right"><a href="#russian">Pу́сский </a></li>
             <li style="float:right"><a href="#english">English</a></li>
@@ -22,7 +22,7 @@
     </nav>
 
     <div class="about">
-        <h2>Über mich</h2>
+        <h2>Person</h2>
         <p>
             Hallo! Mein Name ist Isabella Schön, bin 24 Jahre alt und studiere Angewandte Informatik an der Hochschule für Technik, Gestaltung und Wirtschaft in Konstanz.
             <br>
@@ -39,19 +39,19 @@
             <br>
             Noch mehr über mich erfahren: <a href="https://www.linkedin.com/in/isabella-s-854311211/">LinkedIn</a>
         </p>
-    </div>
+        
 
     <div class="project">
         <h2>Projekte</h2>
-        <div class="row">
-            <div class="column">
-                <a href="https://github.com/IsabellaSchoen/VocabApp" target="_blank">
-                    <img src="https://i.ebayimg.com/images/i/201448652366-0-1/s-l1000.jpg" width="270" height="160">
+        <div class="image_container">
+            <div class="image">
+                <a href="https://github.com/IsabellaSchoen/VocabApptarget=" target="_blank">
+                <img src="https://i.ebayimg.com/images/i/201448652366-0-1/s-l1000.jpg" width="270" height="160" alt="alternate_text">
                 </a>
             </div>
-            <div class="column">
+            <div class="image">
                 <a href="https://github.com/IsabellaSchoen/Website" target="_blank">
-                    <img src="https://www.creatipster.com/wp-content/uploads/2016/01/Einfache-Menschen-zeichnen_Titel.jpg" width="270" height="160">
+                <img src="https://www.creatipster.com/wp-content/uploads/2016/01/Einfache-Menschen-zeichnen_Titel.jpg" width="270" height="160" alt="alternate_text">
                 </a>
             </div>
         </div>
@@ -117,13 +117,16 @@ ul {
         margin: 20px auto;
     }
 
-    .column {
-        padding: 20px;
+    .image_container{
+        position: relative;
+        width: 50%;
     }
 
-    .row{
-        display: flex;
+
+    .image_container .image:hover {
+        opacity: 0.6;
     }
+
 
     .contacting {
         background-color: rgb(147, 173, 144);
@@ -144,3 +147,38 @@ ul {
     }
 
 </style>
+
+
+
+
+
+<!----
+
+
+    <div class="project">
+        <h2>Projekte</h2>
+        <div class="image_container">
+            <div class="image">
+                <div class="image_source">
+                    <img src="https://i.ebayimg.com/images/i/201448652366-0-1/s-l1000.jpg" width="270" height="160">
+                </div>
+                <div class="image_middle">
+                    <div class="image_text"> 
+                        <a href="https://github.com/IsabellaSchoen/VocabApp" target="_blank">Vocab Help</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image_source">
+                    <img src="https://www.creatipster.com/wp-content/uploads/2016/01/Einfache-Menschen-zeichnen_Titel.jpg" width="270" height="160">
+                </div>
+                <div class="image_middle">
+                    <div class="image_text">
+                        <a href="https://github.com/IsabellaSchoen/Website" target="_blank">About Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+-->
