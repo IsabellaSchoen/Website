@@ -3,8 +3,6 @@
     <head>
         <title>Isabella Schön</title>
     </head>
-    <body style="background-color:rgb(236, 228, 255);"> <!--- container for all the visible contents -->
-        <!--- <h1 style="color: rgb(0, 0, 0); font-size: 300%; font-family: 'Meridien', sans-serif; text-align: center;">Isabella Schön</h1> --->
 
 
      <div class="navbar_class">
@@ -37,19 +35,19 @@
 
     <div class="projekt_class">
         <div class="projekt_container">
-            <div class="projekt_one">
+            <div class="projekt">
                 <a href="https://github.com/IsabellaSchoen/Website" target="_blank">Website</a>
             </div>
-            <div class="projekt_two">
+            <div class="projekt">
                 <a href="https://github.com/IsabellaSchoen/Karteikartensystem" target="_blank">Karteikartensystem</a>
             </div>
-            <div class="projekt_three">
+            <div class="projekt">
                 <a href="https://github.com/IsabellaSchoen/WizardChess" target="_blank">Wizard Chess</a>
             </div>
-            <div class="projekt_four">
+            <div class="projekt">
                 <a href="https://github.com/IsabellaSchoen/VocabApptarget=" target="_blank"s>Scheduler Simulation</a>
             </div>
-            <div class="projekt_five">
+            <div class="projekt">
                 <a href="#home" target="_blank">Roboter Simulation</a>
             </div>        
         </div>
@@ -69,11 +67,15 @@
         margin: 0;
         padding: 0;
         font-family: "Meridien", sans-serif;
+        background-color:rgb(236, 228, 255);
+        padding: 20px;
     }
+
 
     :root {
         --goodColor: rgb(197, 178, 225);
     }
+
 
     hr {
         background-color: rgb(236, 228, 255);
@@ -94,7 +96,6 @@
         overflow: hidden;
     }
 
-
     .nav_left a {
         padding: 14px 30px;
         color: rgb(0, 0, 0);
@@ -112,7 +113,6 @@
     }
 
 
-
     .person_class {
         background-color: var(--goodColor);
         width: 1000px;
@@ -126,6 +126,8 @@
         text-align: center;
         font-size: 300%;
         font-family: "Meridien", sans-serif;
+        padding-top: 60px;
+        padding-bottom: 0px;
     }
 
     .person_class .person_name a {
@@ -136,7 +138,12 @@
 
     .person_class .person_job {
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .person_class .person_job:hover {
         font-family: "Meridien", sans-serif;
     }
 
@@ -152,17 +159,29 @@
     }
 
 
-    .projekt_class .projekt_container a {
-        color: rgb(0, 0, 0);
-        background-color: rgb(161, 154, 154);
-        text-decoration: none;
-        display: block;
-        width: 250px;
+    .projekt_class .projekt_container {
         padding: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .projekt_class .projekt_container .projekt {
+        background-color: rgb(161, 154, 154);
+        width: 200px;
+        padding: 100px;
         margin: 10px;
         border: none;
         text-align: center;
-        font-size: 18px;
+    }
+
+
+    .projekt_class .projekt_container .projekt a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .projekt_class .projekt_container a:hover {
         font-family: "Meridien", sans-serif;
     }
 
