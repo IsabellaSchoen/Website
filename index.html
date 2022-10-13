@@ -21,12 +21,12 @@
     </div>
 
 
-    <div class="person_class" id="person">
+    <div class="person_class">
         <hr style="margin: 0;"> 
-        <div id="person_name">
+        <div class="person_name">
            <a href="https://www.linkedin.com/in/isabella-schoen/" target="_blank">Isabella Schön</a>
         </div>
-        <div id="person_job">
+        <div class="person_job">
             <p>
             Bachelor of Science - Angewandte Informatik
             </p>
@@ -36,22 +36,22 @@
         
 
     <div class="projekt_class">
-        <div id="projekt_container">
-            <div id="projekt_one">
+        <div class="projekt_container">
+            <div class="projekt_one">
                 <a href="https://github.com/IsabellaSchoen/Website" target="_blank">Website</a>
             </div>
-            <div id="projekt_two">
+            <div class="projekt_two">
                 <a href="https://github.com/IsabellaSchoen/Karteikartensystem" target="_blank">Karteikartensystem</a>
             </div>
-            <div id="projekt_three">
+            <div class="projekt_three">
                 <a href="https://github.com/IsabellaSchoen/WizardChess" target="_blank">Wizard Chess</a>
             </div>
-            <div id="projekt_four">
+            <div class="projekt_four">
                 <a href="https://github.com/IsabellaSchoen/VocabApptarget=" target="_blank"s>Scheduler Simulation</a>
             </div>
-            <div id="projekt_five">
+            <div class="projekt_five">
                 <a href="#home" target="_blank">Roboter Simulation</a>
-            </div>
+            </div>        
         </div>
     </div>
 
@@ -95,7 +95,15 @@
     }
 
 
-    a {
+    .nav_left a {
+        padding: 14px 30px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .nav_right a {
         padding: 14px 30px;
         color: rgb(0, 0, 0);
         text-decoration: none;
@@ -114,23 +122,24 @@
         overflow: hidden;
     }
 
-
-
-    #person {
-        background-color: var(--goodColor);
-    }
-
-    #person_name {
+    .person_class .person_name {
         text-align: center;
         font-size: 300%;
         font-family: "Meridien", sans-serif;
     }
 
-    #person_job {
+    .person_class .person_name a {
+        background-color: var(--goodColor);
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .person_class .person_job {
         text-align: center;
         font-size: 18px;
         font-family: "Meridien", sans-serif;
     }
+
 
 
     .projekt_class {
@@ -143,11 +152,21 @@
     }
 
 
-
-    #projekt {
+    .projekt_class .projekt_container a {
+        color: rgb(0, 0, 0);
+        background-color: rgb(161, 154, 154);
+        text-decoration: none;
+        display: block;
+        width: 250px;
+        padding: 50px;
+        margin: 10px;
+        border: none;
+        text-align: center;
+        font-size: 18px;
         font-family: "Meridien", sans-serif;
-        background-color: var(--goodColor);
     }
+
+    
 
 
 
