@@ -21,7 +21,8 @@
     </div>
 
 
-    <div class="abschnitte" id="person">
+    <div class="person_class" id="person">
+        <hr style="margin: 0;"> 
         <div id="person_name">
            <a href="https://www.linkedin.com/in/isabella-schoen/" target="_blank">Isabella Schön</a>
         </div>
@@ -30,6 +31,7 @@
             Bachelor of Science - Angewandte Informatik
             </p>
         </div>
+        <hr> 
     </div>
         
 
@@ -39,7 +41,7 @@
                 <a href="https://github.com/IsabellaSchoen/Website" target="_blank">Website</a>
             </div>
             <div id="projekt_two">
-                <a href="https://github.com/IsabellaSchoen/Karteikartensystem" target="_blank">Karteikartensystem</ra>
+                <a href="https://github.com/IsabellaSchoen/Karteikartensystem" target="_blank">Karteikartensystem</a>
             </div>
             <div id="projekt_three">
                 <a href="https://github.com/IsabellaSchoen/WizardChess" target="_blank">Wizard Chess</a>
@@ -73,6 +75,14 @@
         --goodColor: rgb(197, 178, 225);
     }
 
+    hr {
+        background-color: rgb(236, 228, 255);
+        width: 1000px;
+        padding: 5px;
+        margin: 0;
+        border: none;
+    }
+
 
     .navbar_class {
         width: 1000px;
@@ -93,14 +103,20 @@
         text-align: center;
     }
 
-    .projekt_class {
+
+
+    .person_class {
         background-color: var(--goodColor);
+        width: 1000px;
+        margin: 0px auto;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
     }
 
 
 
     #person {
-        padding: 10px 30px;
         background-color: var(--goodColor);
     }
 
@@ -117,9 +133,18 @@
     }
 
 
+    .projekt_class {
+        background-color: var(--goodColor);
+        width: 1000px;
+        margin: 0px auto;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+    }
+
+
 
     #projekt {
-        padding: 10px 30px;
         font-family: "Meridien", sans-serif;
         background-color: var(--goodColor);
     }
