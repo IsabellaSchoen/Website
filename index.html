@@ -2,45 +2,60 @@
 <html lang="de"> <!--- root element of an HTML page -->
     <head>
         <title>Isabella Schön</title>
-    </head>        
+    </head>
     <body style="background-color:rgb(236, 228, 255);"> <!--- container for all the visible contents -->
-        <h1 style="color: rgb(0, 0, 0); font-size: 300%; font-family: 'Meridien', sans-serif; text-align: center;">Isabella Schön</h1>
+        <!--- <h1 style="color: rgb(0, 0, 0); font-size: 300%; font-family: 'Meridien', sans-serif; text-align: center;">Isabella Schön</h1> --->
 
 
-     <nav class="abschnitte" id="navigation_bar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="https://github.com/IsabellaSchoen" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/isabella-schoen/" target="_blank">Person</a></li>
-            <li><a href="#about">Projekte</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li style="float:right"><a href="#russian">Pу́сский </a></li>
-            <li style="float:right"><a href="#english">English</a></li>
-            <li style="float:right"><a href="#german">Deutsch</a></li>
-            <!--toggleLanguage(language)-->
-        </ul>
-    </nav>
+     <div class="navbar_class">
+        <div class="nav_left">
+            <a style="float:left" href="#home">Home</a>
+            <a style="float:left" href="https://www.linkedin.com/in/isabella-schoen/" target="_blank">Person</a>
+            <a style="float:left" href="https://github.com/IsabellaSchoen" target="_blank">Projekte</a>
+            <a style="float:left" href="#kontakt" target="_blank">Kontakt</a>
+        </div>
+        <div class="nav_right">
+            <a style="float:right" href="#english">English</a>
+            <a style="float:right" href="#german">Deutsch</a>
+        </div>
+    </div>
 
 
     <div class="abschnitte" id="person">
         <div id="person_name">
-            <a href="https://www.linkedin.com/in/isabella-schoen/">Isabella Schön</a>
+           <a href="https://www.linkedin.com/in/isabella-schoen/">Isabella Schön</a>
         </div>
         <div id="person_job">
             <p>
-            Informatikerin & Entwicklering
+            Bachelor of Science - Angewandte Informatik
             </p>
         </div>
     </div>
         
 
-    <div class="abschnitte" id="project">
-        
+    <div class="abschnitte" id="projekt">
+        <div id="projekt_container">
+            <div id="projekt_one">
+                <!--- <a href="https://github.com/IsabellaSchoen/VocabApptarget=">Roboter Simulation</a> </a>--->
+                <router-link class="routerLink" to="https://github.com/IsabellaSchoen/Website">Website</router-link>
+            </div>
+            <div id="projekt_two">
+                <router-link class="routerLink" to="https://github.com/IsabellaSchoen/Karteikartensystem">Karteikartensystem</router-link>
+            </div>
+            <div id="projekt_three">
+                <router-link class="routerLink" to="https://github.com/IsabellaSchoen/WizardChess">Wizard Chess</router-link>
+            </div>
+            <div id="projekt_four">
+                <router-link class="routerLink" to="https://github.com/IsabellaSchoen/VocabApptarget=">Roboter Simulation</router-link>
+            </div>
+        </div>
     </div>
 
 
     </body>
 </html>
+
+
 
 
 
@@ -57,41 +72,24 @@
         --goodColor: rgb(197, 178, 225);
     }
 
-    .abschnitte {
+
+    .navbar_class {
         width: 1000px;
         margin: 0px auto;
         text-align: center;
-    }
-
-
-    ul {
+        background-color: rgb(161, 154, 154);
         list-style-type: none;
         padding: 0;
         overflow: hidden;
-        background-color: rgb(161, 154, 154);
-    }
-    
-
-
-    li {
-        float: left;
     }
 
-    li a {
+
+    a {
         padding: 14px 30px;
         color: rgb(0, 0, 0);
         text-decoration: none;
         display: block;
         text-align: center;
-    }
-
-    li a:hover {
-        color:rgb(0, 0, 0);
-        background-color: rgb(122, 113, 113);
-    }
-
-    li a:active {
-        color:rgba(0, 0, 0, 0.849);
     }
 
 
@@ -115,7 +113,7 @@
 
 
 
-    #project {
+    #projekt {
         padding: 10px 30px;
         font-family: "Meridien", sans-serif;
         background-color: var(--goodColor);
@@ -123,40 +121,4 @@
 
 
 
-
 </style>
-
-
-
-
-
-<!----
-
-
-    <div class="project">
-        <h2>Projekte</h2>
-        <div class="image_container">
-            <div class="image">
-                <div class="image_source">
-                    <img src="https://i.ebayimg.com/images/i/201448652366-0-1/s-l1000.jpg" width="270" height="160">
-                </div>
-                <div class="image_middle">
-                    <div class="image_text"> 
-                        <a href="https://github.com/IsabellaSchoen/VocabApp" target="_blank">Vocab Help</a>
-                    </div>
-                </div>
-            </div>
-            <div class="image">
-                <div class="image_source">
-                    <img src="https://www.creatipster.com/wp-content/uploads/2016/01/Einfache-Menschen-zeichnen_Titel.jpg" width="270" height="160">
-                </div>
-                <div class="image_middle">
-                    <div class="image_text">
-                        <a href="https://github.com/IsabellaSchoen/Website" target="_blank">About Me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
--->
